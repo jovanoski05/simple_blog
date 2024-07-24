@@ -16,7 +16,7 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
         <x-nav-item href="/">Home</x-nav-item>
-        <x-nav-item href="#about">About</x-nav-item>
+        <x-nav-item href="/#about">About</x-nav-item>
 
         @auth
         <x-nav-item href="/">My Blog</x-nav-item>
@@ -25,7 +25,7 @@
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         @guest
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="/login" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
         @endguest
 
         @auth
