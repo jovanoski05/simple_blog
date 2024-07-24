@@ -12,8 +12,8 @@
                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Simple blog project</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">This is a simple blog project created using laravel. This project is made for learning laravel, php and mysql.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                <x-blue-button href="#">Register</x-blue-button>
-                <x-nav-item href="#">Log In -></x-nav-item>
+                <x-blue-button href="/register">Register</x-blue-button>
+                <x-nav-item href="/login">Log In -></x-nav-item>
                 </div>
             </div>
             </div>

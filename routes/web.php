@@ -13,4 +13,7 @@ Route::get('/login', function() {
     return view('sessions.login');
 })->name('login');
 
+Route::get('/register', function() {
+    return view('sessions.register');
+});
 
