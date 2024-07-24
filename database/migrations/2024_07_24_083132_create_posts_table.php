@@ -19,15 +19,15 @@ return new class extends Migration
             $table->string('title', 255);
             $table->text('body');
             $table->integer('likes', false, true);
-            $table->foreignIdFor(User::class, 'author')->onDelete('cascade');
+            $table->foreignIdFor(User::class, 'user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
 
         Schema::create('comments', function (Blueprint $table){
             $table->id();
             $table->string('body', 512);
-            $table->foreignIdFor(USer::class, 'user_id')->onDelete('cascade');
-            $table->foreignIdFor(Post::class, 'post_id')->onDelete('cascade');
+            $table->foreignIdFor(User::class, 'user_id')->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(Post::class, 'post_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
